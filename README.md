@@ -109,6 +109,35 @@ In this lab exercise, we will alternate between the Admin Panel and the Agent Pa
 
 5. Configure Agents
 
+- We are going to create a couple of help desk agents to do tickets with. One will Jane (Assigned to SysAdmins Department) and the other John (Assigned to the Support Department).
+- In the Admin Panel go to Agents then click 'Add New Agent'.
+
+![image](https://github.com/user-attachments/assets/859a617a-2ec4-4414-abd9-943d0285e10f)
+
+osTicket Agent 1
+- Name: Jane Doe
+- Email Address: Jane@lognpacific.com
+- Username: jane
+
+![image](https://github.com/user-attachments/assets/10c346cf-8808-46a4-8c20-91a9d241482f)
+
+
+
+- Click Set Password -> Uncheck "Send the agent a password reset email". Enter the password and make sure "Require Password change at next login" is set to off.
+- Password: Password1
+
+![image](https://github.com/user-attachments/assets/612ba88f-d3b7-4e86-87ea-deaa029b8b1c)
+
+- Select the "Access" tab. Under "Primary Department" select "SysAdmins" and then choose the "Supreme Admin" role. Next is optional, under "Extended Access" choose "Support".
+
+![image](https://github.com/user-attachments/assets/b7c77aee-50b6-4f27-abbe-fdce50e30b04)
+
+- Select the "Teams" tab and assign her to the "Online Banking" team.
+- Click 'Create'
+
+![image](https://github.com/user-attachments/assets/b642f89b-83e9-4ccc-97be-b7e3a6db25bf)
+
+![image](https://github.com/user-attachments/assets/b53e742a-c753-4bae-9c69-0a4cf09a4ea6)
 
 
 6. Configure Users
