@@ -28,9 +28,43 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Configuration Steps</h2>
 
-
+In this lab exercise, we will alternate between the Admin Panel and the Agent Panel within the osTicket system. The Admin Panel is utilized for configuring system settings and managing backend operations, whereas the Agent Panel is designed for help desk personnel to access, manage, and respond to support tickets.
 
 1. Configure Roles
+
+- On your windows VM, open a browser and access to osTicket website (http://localhost/osTicket/scp/login.php).
+- Login to the Help Desk login page with credentials created previously:
+- Username: adminuser
+- Password: Password1
+
+![image](https://github.com/user-attachments/assets/ffa6bb24-8379-48e3-abdb-5554f0357532)
+
+- Select Admin Panel (Top right).
+
+![Screenshot 2025-05-13 121013](https://github.com/user-attachments/assets/ce458901-fc1c-4264-8afb-fdac347a6121)
+
+- Admin Panel -> Agents -> Roles.
+
+![image](https://github.com/user-attachments/assets/e2d384af-362e-4994-8d4c-08dd9e031056)
+
+- To create a new role click on 'Add New Role'.
+
+![image](https://github.com/user-attachments/assets/cfc23e56-143d-477d-b7a1-5f5f651d4927)
+
+- Name: Supreme Admin
+
+![image](https://github.com/user-attachments/assets/7a737702-d23a-473e-8f05-89907d5179d0)
+
+- On the Permissions tab, give permissionn to all Tickets, Tasks and Knowledgebase for that role.
+- Click 'Add Role'.
+
+![image](https://github.com/user-attachments/assets/b59d1e0c-fded-47ea-b9fc-285c6ea60e3d)
+
+![image](https://github.com/user-attachments/assets/c8cbcd98-ea13-4580-8bbe-fa9aef733161)
+
+![image](https://github.com/user-attachments/assets/2c80aa7e-4483-4bde-9949-02bc26aff17a)
+
+![image](https://github.com/user-attachments/assets/7eda7026-2b53-4d00-8d3f-e5b66b7195cd)
 
 
 2. Configure Departments
