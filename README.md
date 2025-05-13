@@ -69,14 +69,46 @@ In this lab exercise, we will alternate between the Admin Panel and the Agent Pa
 
 2. Configure Departments
 
+- We are going to create a new department called "SysAdmins". To do this go to Departments Under Agents.
+- Click on 'Add New Department'.
+
+![image](https://github.com/user-attachments/assets/6b40722a-bddb-47f5-a18f-2ea827aa9c59)
+
+- In the Setting Tab, Make sure Parent = TopLevelDepartment. We can configure things like SLAs (Service Level Agreement) here but not required for this lab.
+- Name: SysAdmins
+- We can also add "Agents" to departments here but we can come back and configure this later.
+- Click "Create Department". 
+
+![image](https://github.com/user-attachments/assets/db3dc9b6-f5e2-42ea-97d3-e52c65ed8db2)
+
+![image](https://github.com/user-attachments/assets/5bcbc881-60e0-4f2d-90a9-aa98dc0b28ac)
+
 
 3. Configure Teams
+
+- Teams allows us to create a group of people from different departments. Create a team within our simulated organization named 'Online Banking,' which will include members of the online banking team as well as help desk agents
+- To do this go to Yeams Under Agents.
+- Click 'Add a New Team'.
+
+![image](https://github.com/user-attachments/assets/99181406-1717-4ba4-bb20-6deac530c5cd)
+
+- Name: Online Banking
+- Click 'Create'.
+- In this lab we will create more members later.
+
+![image](https://github.com/user-attachments/assets/57c43f7f-b618-4049-a8f2-4fcd878eed05)
+
+![image](https://github.com/user-attachments/assets/2a4c045c-d19a-4113-bde8-db7d2d353302)
 
 
 4. Allow anyone to create tickets
 
+- We'll now check ticket creation for all users that registration is not required. In the Admin Panel, click on Settings -> Users. Uncheck: "Require registration and login to create tickets."
+
+![image](https://github.com/user-attachments/assets/18f1775e-44f5-4e0d-9a89-280b77d69e43)
 
 5. Configure Agents
+
 
 
 6. Configure Users
@@ -93,29 +125,9 @@ In this lab exercise, we will alternate between the Admin Panel and the Agent Pa
 ----------------------------------------------------
 ----------------------------------------------------
 
-Admin/Analyst Login Page:
-http://localhost/osTicket/scp/login.php 
 
 End Users osTicket URL:
 http://localhost/osTicket 
-
-Acknowledge Agent Panel vs Admin Panel
-
-Configure Roles (for grouping permissions)
-Admin Panel -> Agents -> Roles
-- Supreme Admin
-
-Configure Departments (Ticket Visibility, Help Desk vs SysAdmins, vs Networking)
-Admin Panel -> Agents -> Departments
-- SysAdmins
-
-Configure Teams
-Admin Panel -> Agents -> Teams (Pull Agents from different Departments)
-- Online Banking
-
-Allow anyone to create tickets
-Admin Panel -> Settings -> User Settings (UNCHECK: unregistered users can create tickets)
-- Registration Required: Require registration and login to create tickets 
 
 Configure Agents (workers)
 Admin Panel -> Agents -> Add New
