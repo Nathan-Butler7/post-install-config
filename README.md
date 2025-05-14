@@ -30,8 +30,7 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 In this lab exercise, we will alternate between the Admin Panel and the Agent Panel within the osTicket system. The Admin Panel is utilized for configuring system settings and managing backend operations, whereas the Agent Panel is designed for help desk personnel to access, manage, and respond to support tickets.
 
-1. Configure Roles
-
+<b>1. Configure Roles</b> <br />
 - On your windows VM, open a browser and access to osTicket website (http://localhost/osTicket/scp/login.php).
 - Login to the Help Desk login page with credentials created previously:
 - Username: adminuser
@@ -66,8 +65,7 @@ In this lab exercise, we will alternate between the Admin Panel and the Agent Pa
 
 ![image](https://github.com/user-attachments/assets/7eda7026-2b53-4d00-8d3f-e5b66b7195cd)
 
-
-2. Configure Departments
+<b>2. Configure Departments</b> <br />
 
 - We are going to create a new department called "SysAdmins". To do this go to Departments Under Agents.
 - Click on 'Add New Department'.
@@ -83,8 +81,7 @@ In this lab exercise, we will alternate between the Admin Panel and the Agent Pa
 
 ![image](https://github.com/user-attachments/assets/5bcbc881-60e0-4f2d-90a9-aa98dc0b28ac)
 
-
-3. Configure Teams
+<b>3. Configure Teams</b> <br />
 
 - Teams allows us to create a group of people from different departments. Create a team within our simulated organization named 'Online Banking,' which will include members of the online banking team as well as help desk agents
 - To do this go to Yeams Under Agents.
@@ -100,14 +97,13 @@ In this lab exercise, we will alternate between the Admin Panel and the Agent Pa
 
 ![image](https://github.com/user-attachments/assets/2a4c045c-d19a-4113-bde8-db7d2d353302)
 
-
-4. Allow anyone to create tickets
+<b>4. Allow anyone to create tickets</b> <br />
 
 - We'll now check ticket creation for all users that registration is not required. In the Admin Panel, click on Settings -> Users. Uncheck: "Require registration and login to create tickets."
 
 ![image](https://github.com/user-attachments/assets/18f1775e-44f5-4e0d-9a89-280b77d69e43)
 
-5. Configure Agents
+<b>5. Configure Agents</b> <br />
 
 - We are going to create a couple of help desk agents to do tickets with. One will Jane (Assigned to SysAdmins Department) and the other John (Assigned to the Support Department).
 - In the Admin Panel go to Agents then click 'Add New Agent'.
@@ -160,7 +156,7 @@ osTicket Agent 2
 
 ![image](https://github.com/user-attachments/assets/5475f003-6bf5-4a8c-853f-84a614435973)
 
-6. Configure Users
+<b>6. Configure Users</b> <br />
 
 - Next, we will create a customer who will be used to submit tickets to the help desk. Our customer name will be "karen".
 - To start, go to Agent Panel -> Users -> Click "Add New User".
@@ -176,7 +172,7 @@ osTicket Agent 2
 
 ![image](https://github.com/user-attachments/assets/0d7a99b7-5db8-4f46-a089-c02f29d94e37)
 
-7. Configure SLA
+<b>7. Configure SLA</b> <br />
 The purpose of SLAs (Service Level Agreements) is to clearly define the expected level of service between a provider and a customer, including performance standards, responsibilities, and consequences if those standards aren’t met. We are going to create 3 SLAs:
 - Sev-A (Severity A - Highest Priority) - (Grace Period: 1 hour, Schedule: 24/7)
 - Sev-B (Severity B - Mid Priority) - (Grace Period: 4 hours, Schedule: 24/7)
@@ -208,7 +204,7 @@ The purpose of SLAs (Service Level Agreements) is to clearly define the expected
 ![image](https://github.com/user-attachments/assets/68e6d3eb-ccf1-4019-9d77-ddd075e20e63)
 
 - Click 'Add New SLA Plan'.
-- Insert the following information
+Insert the following information
 - Name: Sev-C
 - Grace Period: 8 hours
 - Schedule: Monday - Friday 8am -5pm with U.S. Holidays (Business Hours)
@@ -218,25 +214,54 @@ The purpose of SLAs (Service Level Agreements) is to clearly define the expected
 
 ![image](https://github.com/user-attachments/assets/ecf3f3a3-09f8-4cff-aab8-75b1a72929cd)
 
-8. Configure Help Topics
+<b>8. Configure Help Topics</b> <br />
 
-   
+Configuring Help Topics lets you organize and route support requests by category (like "Technical Support"). This helps users pick the right type of issue, so tickets go to the right department or staff.
+- Admin Panel -> Manage -> Help Topics.
+- You will notice 4 default Help Topics have already been created in the database. For this part, we are going to create 5 Help Topics
+- Click 'Add New Help Topic'.
+
+![image](https://github.com/user-attachments/assets/d1242942-9fc4-460c-a54b-920b3a80ffbe)
+
+Topic: Business Critical Outage
+Parent Topic: Report a Problem
+- Click 'Add Topic'.
+
+![image](https://github.com/user-attachments/assets/02ad8828-6177-4170-bd33-e2575fba0837)
+
+- Help Topics -> Add New Help Topic
+Topic: Personal Computer Issues
+Parent Topic: Report a Problem
+- Click 'Add Topic'.
+
+![image](https://github.com/user-attachments/assets/6ab1f154-d0e2-48a9-85ed-a4d53d049505)
+
+- Help Topics -> Add New Help Topic
+Topic: Equipment Request
+Parent Topic: General Inquiry
+- Click 'Add Topic'.
+
+![image](https://github.com/user-attachments/assets/0d2ab7c5-4dda-4f52-b264-52a107670556)
+
+- Help Topics -> Add New Help Topic
+Topic: Password Reset
+Parent Topic: Report a Problem
+- Click 'Add Topic'.
+
+![image](https://github.com/user-attachments/assets/ecda6837-dae9-4f00-89e1-e5174e0b6703)
+
+- Help Topics -> Add New Help Topic
+Topic: Other
+Parent Topic: General Inquiry
+- Click 'Add Topic'.
+
+![image](https://github.com/user-attachments/assets/9960c9b6-a806-4470-a103-a2f2c52075ca)
+
+![image](https://github.com/user-attachments/assets/4840b6fc-8b21-4c40-b85d-5a613443dc1c)
 
 
-----------------------------------------------------
-----------------------------------------------------
 
 
-End Users osTicket URL:
-http://localhost/osTicket 
-
-Configure Help Topics (For when users create a ticket)
-Admin Panel -> Manage -> Help Topics
-- Business Critical Outage
-- Personal Computer Issues
-- Equipment Request
-- Password Reset
-- Other
 
 
 
