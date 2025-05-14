@@ -121,8 +121,6 @@ osTicket Agent 1
 
 ![image](https://github.com/user-attachments/assets/10c346cf-8808-46a4-8c20-91a9d241482f)
 
-
-
 - Click Set Password -> Uncheck "Send the agent a password reset email". Enter the password and make sure "Require Password change at next login" is set to off.
 - Password: Password1
 
@@ -139,12 +137,86 @@ osTicket Agent 1
 
 ![image](https://github.com/user-attachments/assets/b53e742a-c753-4bae-9c69-0a4cf09a4ea6)
 
+- We are going to create another Agent. In the Admin Panel go to Agents then click 'Add New Agent'.
+
+![image](https://github.com/user-attachments/assets/7642188e-aece-4c21-ac82-35785c954067)
+
+osTicket Agent 2
+- Name: John Doe
+- Email Address: John@lognpacific.com
+- Username: john
+
+![image](https://github.com/user-attachments/assets/ccfd04eb-d8d7-459f-be7d-e505f43b4ccc)
+
+- Click Set Password -> Uncheck "Send the agent a password reset email". Enter the password and make sure "Require Password change at next login" is set to off.
+- Password: Password1
+
+![image](https://github.com/user-attachments/assets/4c9e7488-9d16-445b-a12e-694a7c5be4aa)
+
+- Select the "Access" tab. Under "Primary Department" select "Support" and then choose the "Supreme Admin" role. We don't need to add John to a team.
+- Click 'Create'.
+
+![image](https://github.com/user-attachments/assets/e7e24ec6-b2f9-4f01-b589-91234c2f369c)
+
+![image](https://github.com/user-attachments/assets/5475f003-6bf5-4a8c-853f-84a614435973)
 
 6. Configure Users
 
+- Next, we will create a customer who will be used to submit tickets to the help desk. Our customer name will be "karen".
+- To start, go to Agent Panel -> Users -> Click "Add New User".
+
+![image](https://github.com/user-attachments/assets/e1b47588-8528-43ae-b5ac-8fec5d58db61)
+
+- Insert the following information
+- Email: karen@lognpacific.com
+- Full Name: Karen
+- Click 'Add User'.
+
+![image](https://github.com/user-attachments/assets/732ac44c-f80c-4b95-a584-98dc308b0888)
+
+![image](https://github.com/user-attachments/assets/0d7a99b7-5db8-4f46-a089-c02f29d94e37)
 
 7. Configure SLA
+The purpose of SLAs (Service Level Agreements) is to clearly define the expected level of service between a provider and a customer, including performance standards, responsibilities, and consequences if those standards aren’t met. We are going to create 3 SLAs:
+- Sev-A (Severity A - Highest Priority) - (Grace Period: 1 hour, Schedule: 24/7)
+- Sev-B (Severity B - Mid Priority) - (Grace Period: 4 hours, Schedule: 24/7)
+- Sev-C (Severity C - Lowest Priority) - (Grace Period: 8 hours, [Business Hours])
 
+- Go to Admin Panel -> Manage -> SLA -> Add New SLA Plan.
+
+![image](https://github.com/user-attachments/assets/a90248d5-c93c-4085-a1ea-399ec4dba1fb)
+
+- Insert the following information
+- Name: Sev-A
+- Grace Period: 1 hour
+- Schedule: 24/7
+- Click 'Add plan'
+
+![image](https://github.com/user-attachments/assets/8051bc48-3fe8-47b4-9453-4663b960a2c9)
+
+![image](https://github.com/user-attachments/assets/7648b81e-3bdb-4f82-a5c7-4edea6715df5)
+
+- Click 'Add New SLA Plan'.
+- Insert the following information
+- Name: Sev-B
+- Grace Period: 4 hours
+- Schedule: 24/7
+- Click 'Add plan'
+
+![image](https://github.com/user-attachments/assets/805bd63c-214b-4e3e-97d2-5195e1505588)
+
+![image](https://github.com/user-attachments/assets/68e6d3eb-ccf1-4019-9d77-ddd075e20e63)
+
+- Click 'Add New SLA Plan'.
+- Insert the following information
+- Name: Sev-C
+- Grace Period: 8 hours
+- Schedule: Monday - Friday 8am -5pm with U.S. Holidays (Business Hours)
+- Click 'Add plan'
+
+![image](https://github.com/user-attachments/assets/ea25aad1-96a8-4089-b624-52b3be443e84)
+
+![image](https://github.com/user-attachments/assets/ecf3f3a3-09f8-4cff-aab8-75b1a72929cd)
 
 8. Configure Help Topics
 
@@ -157,22 +229,6 @@ osTicket Agent 1
 
 End Users osTicket URL:
 http://localhost/osTicket 
-
-Configure Agents (workers)
-Admin Panel -> Agents -> Add New
-- Jane (Dept: SysAdmins)
-- John (Dept: Support)
-
-Configure Users (customers)
-Agent Panel -> Users -> Add New
-- Karen
-- Ken
-
-Configure SLA
-Admin Panel -> Manage -> SLA
-- Sev-A (Grace Period: 1 hour, Schedule: 24/7)
-- Sev-B (Grace Period: 4 hours, Schedule: 24/7)
-- Sev-C (Grace Period: 8 hours, Business Hours)
 
 Configure Help Topics (For when users create a ticket)
 Admin Panel -> Manage -> Help Topics
