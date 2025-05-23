@@ -31,7 +31,7 @@ This tutorial outlines the post-install configuration of the open-source help de
 In this lab exercise, we will alternate between the Admin Panel and the Agent Panel within the osTicket system. The Admin Panel is utilized for configuring system settings and managing backend operations, whereas the Agent Panel is designed for help desk personnel to access, manage, and respond to support tickets.
 
 <b>1. Configure Roles</b> <br />
-- On your windows VM, open a browser and access to osTicket website (http://localhost/osTicket/scp/login.php).
+- On your Windows VM, open a browser and access to osTicket website (http://localhost/osTicket/scp/login.php).
 - Login to the Help Desk login page with credentials created previously:
 - Username: adminuser
 - Password: Password1
@@ -54,7 +54,7 @@ In this lab exercise, we will alternate between the Admin Panel and the Agent Pa
 
 ![image](https://github.com/user-attachments/assets/7a737702-d23a-473e-8f05-89907d5179d0)
 
-- On the Permissions tab, give permissionn to all Tickets, Tasks and Knowledgebase for that role.
+- On the Permissions tab, permit all Tickets, Tasks, and Knowledgebase for that role.
 - Click 'Add Role'.
 
 ![image](https://github.com/user-attachments/assets/b59d1e0c-fded-47ea-b9fc-285c6ea60e3d)
@@ -72,7 +72,7 @@ In this lab exercise, we will alternate between the Admin Panel and the Agent Pa
 
 ![image](https://github.com/user-attachments/assets/6b40722a-bddb-47f5-a18f-2ea827aa9c59)
 
-- In the Setting Tab, Make sure Parent = TopLevelDepartment. We can configure things like SLAs (Service Level Agreement) here but not required for this lab.
+- In the Setting Tab, Make sure Parent = TopLevelDepartment. We can configure things like SLAs (Service Level Agreements) here but not required for this lab.
 - Name: SysAdmins
 - We can also add "Agents" to departments here but we can come back and configure this later.
 - Click "Create Department". 
@@ -83,7 +83,7 @@ In this lab exercise, we will alternate between the Admin Panel and the Agent Pa
 
 <b>3. Configure Teams</b> <br />
 
-- Teams allows us to create a group of people from different departments. Create a team within our simulated organization named 'Online Banking,' which will include members of the online banking team as well as help desk agents
+- Teams allow us to create a group of people from different departments. Create a team within our simulated organization named 'Online Banking,' which will include members of the online banking team as well as help desk agents
 - To do this go to Yeams Under Agents.
 - Click 'Add a New Team'.
 
@@ -91,7 +91,7 @@ In this lab exercise, we will alternate between the Admin Panel and the Agent Pa
 
 - Name: Online Banking
 - Click 'Create'.
-- In this lab we will create more members later.
+- In this lab, we will create more members later.
 
 ![image](https://github.com/user-attachments/assets/57c43f7f-b618-4049-a8f2-4fcd878eed05)
 
@@ -105,7 +105,7 @@ In this lab exercise, we will alternate between the Admin Panel and the Agent Pa
 
 <b>5. Configure Agents</b> <br />
 
-- We are going to create a couple of help desk agents to do tickets with. One will Jane (Assigned to SysAdmins Department) and the other John (Assigned to the Support Department).
+- We are going to create a couple of help desk agents to do tickets with. One will be Jane (Assigned to SysAdmins Department) and the other John (Assigned to the Support Department).
 - In the Admin Panel go to Agents then click 'Add New Agent'.
 
 ![image](https://github.com/user-attachments/assets/859a617a-2ec4-4414-abd9-943d0285e10f)
@@ -158,7 +158,7 @@ osTicket Agent 2
 
 <b>6. Configure Users</b> <br />
 
-- Next, we will create a customer who will be used to submit tickets to the help desk. Our customer name will be "karen".
+- Next, we will create a customer's who will be used to submit tickets to the help desk. Our customer name will be "Karen".
 - To start, go to Agent Panel -> Users -> Click "Add New User".
 
 ![image](https://github.com/user-attachments/assets/e1b47588-8528-43ae-b5ac-8fec5d58db61)
@@ -207,7 +207,7 @@ The purpose of SLAs (Service Level Agreements) is to clearly define the expected
 Insert the following information
 - Name: Sev-C
 - Grace Period: 8 hours
-- Schedule: Monday - Friday 8am -5pm with U.S. Holidays (Business Hours)
+- Schedule: Monday - Friday 8 am - 5 pm with U.S. Holidays (Business Hours)
 - Click 'Add plan'
 
 ![image](https://github.com/user-attachments/assets/ea25aad1-96a8-4089-b624-52b3be443e84)
@@ -218,7 +218,7 @@ Insert the following information
 
 Configuring Help Topics lets you organize and route support requests by category (like "Technical Support"). This helps users pick the right type of issue, so tickets go to the right department or staff.
 - Admin Panel -> Manage -> Help Topics.
-- You will notice 4 default Help Topics have already been created in the database. For this part, we are going to create 5 Help Topics
+- You will notice that 4 default Help Topics have already been created in the database. For this part, we are going to create 5 Help Topics
 - Click 'Add New Help Topic'.
 
 ![image](https://github.com/user-attachments/assets/d1242942-9fc4-460c-a54b-920b3a80ffbe)
